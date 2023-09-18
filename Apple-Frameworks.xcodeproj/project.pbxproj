@@ -46,20 +46,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0767E78A2AB885FD008D9F58 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				0767E78D2AB88642008D9F58 /* FrameworkGridViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		0767E7932AB88C86008D9F58 /* Utilities */ = {
+		0767E7932AB88C86008D9F58 /* UIKit Components */ = {
 			isa = PBXGroup;
 			children = (
 				0767E7912AB88B7B008D9F58 /* SafariView.swift */,
 			);
-			path = Utilities;
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		0767E7982AB88F9D008D9F58 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0767E7992AB88FA8008D9F58 /* FrameworkGridView */,
+				0767E79A2AB88FC7008D9F58 /* FrameworkDetailView */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		0767E7992AB88FA8008D9F58 /* FrameworkGridView */ = {
+			isa = PBXGroup;
+			children = (
+				078F70762AB72C5100DE8908 /* FrameworkGridView.swift */,
+				0767E78D2AB88642008D9F58 /* FrameworkGridViewModel.swift */,
+			);
+			path = FrameworkGridView;
+			sourceTree = "<group>";
+		};
+		0767E79A2AB88FC7008D9F58 /* FrameworkDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				0767E7862AB8814F008D9F58 /* FrameworkDetailView.swift */,
+			);
+			path = FrameworkDetailView;
+			sourceTree = "<group>";
+		};
+		0767E79B2AB89004008D9F58 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0767E7962AB88EBD008D9F58 /* XDismissButton.swift */,
+				0767E7882AB88344008D9F58 /* AFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		0767E79C2AB89015008D9F58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0767E7942AB88E5E008D9F58 /* FrameworkTitleView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		078F70582AB72B5D00DE8908 = {
@@ -82,10 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				078F70642AB72B5D00DE8908 /* Apple_FrameworksApp.swift */,
-				078F70742AB72C0C00DE8908 /* Views */,
-				0767E78A2AB885FD008D9F58 /* ViewModel */,
+				0767E7982AB88F9D008D9F58 /* Screens */,
 				078F70752AB72C1000DE8908 /* Model */,
-				0767E7932AB88C86008D9F58 /* Utilities */,
+				078F70742AB72C0C00DE8908 /* Views */,
+				0767E7932AB88C86008D9F58 /* UIKit Components */,
 				078F70682AB72B5E00DE8908 /* Assets.xcassets */,
 				078F706A2AB72B5E00DE8908 /* Preview Content */,
 			);
@@ -103,11 +138,8 @@
 		078F70742AB72C0C00DE8908 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				078F70762AB72C5100DE8908 /* FrameworkGridView.swift */,
-				0767E7862AB8814F008D9F58 /* FrameworkDetailView.swift */,
-				0767E7962AB88EBD008D9F58 /* XDismissButton.swift */,
-				0767E7942AB88E5E008D9F58 /* FrameworkTitleView.swift */,
-				0767E7882AB88344008D9F58 /* AFButton.swift */,
+				0767E79C2AB89015008D9F58 /* View */,
+				0767E79B2AB89004008D9F58 /* Buttons */,
 			);
 			path = Views;
 			sourceTree = "<group>";
