@@ -14,8 +14,6 @@ struct FrameworkDetailView: View {
     
     var body: some View {
         VStack {
-            XDismissButton(isShowingDetailView: $isShowingDetailView)
-            
             Spacer()
             
             FrameworkTitleView(framework: framework)
@@ -29,8 +27,13 @@ struct FrameworkDetailView: View {
             Button {
                 isShowingSafariView = true
             } label: {
-                AFButton(title: "Learn More")
+                //                AFButton(title: "Learn More")
+                Label("Learn More", systemImage: "book.fill")
             }
+            .buttonStyle(.bordered)
+            .controlSize(.large)
+//            .buttonBorderShape(.capsule)
+            .tint(.red)
         }
         .fullScreenCover(isPresented: $isShowingSafariView) {
             SafariView(url: URL(string: framework.urlString)!)
