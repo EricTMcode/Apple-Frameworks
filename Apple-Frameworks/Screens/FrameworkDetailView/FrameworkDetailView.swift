@@ -23,7 +23,12 @@ struct FrameworkDetailView: View {
             
             Spacer()
             
+            Link(destination: URL(string: framework.urlString)!) {
+                AFButton(title: "Learn More")
+            }
+            
             Button {
+                
                 isShowingSafariView = true
             } label: {
                 //                AFButton(title: "Learn More")
@@ -31,12 +36,11 @@ struct FrameworkDetailView: View {
             }
             .buttonStyle(.bordered)
             .controlSize(.large)
-//            .buttonBorderShape(.capsule)
             .tint(.red)
         }
-        .fullScreenCover(isPresented: $isShowingSafariView) {
-            SafariView(url: URL(string: framework.urlString)!)
-        }
+//        .fullScreenCover(isPresented: $isShowingSafariView) {
+//            SafariView(url: URL(string: framework.urlString)!)
+//        }
     }
 }
 
